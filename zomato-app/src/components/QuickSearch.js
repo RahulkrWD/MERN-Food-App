@@ -7,7 +7,7 @@ function QuickSearch() {
   const [quickSearch, setQuickSearch] = useState([]);
   async function fetchQuickSearch() {
     try {
-      const res = await axios.get("http://localhost:4400/quickSearch");
+      const res = await axios.get("https://zomato-app-x52c.onrender.com/quickSearch");
       setQuickSearch(res.data);
     } catch (err) {
       console.log(err);

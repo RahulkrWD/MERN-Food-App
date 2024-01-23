@@ -15,7 +15,7 @@ function Details() {
   async function fetchRestId() {
     try {
       const response = await axios.get(
-        `http://localhost:4400/restaurants/${restId}`
+        `https://zomato-app-x52c.onrender.com/restaurants/${restId}`
       );
       setDetails(response.data[0]);
     } catch (error) {

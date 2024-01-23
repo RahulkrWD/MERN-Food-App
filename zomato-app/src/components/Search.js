@@ -13,7 +13,7 @@ function Search() {
   // Fetch states from the API
   async function fetchStates() {
     try {
-      const response = await axios.get("http://localhost:4400/location");
+      const response = await axios.get("https://zomato-app-x52c.onrender.com/location");
       setStates(response.data);
     } catch (err) {
       console.log(err);
@@ -24,7 +24,7 @@ function Search() {
   async function fetchRestaurants() {
     try {
       const response = await axios.get(
-        `http://localhost:4400/restaurants?stateId=${selectedState}`
+        `https://zomato-app-x52c.onrender.com/restaurants?stateId=${selectedState}`
       );
       setRestaurants(response.data);
     } catch (err) {
